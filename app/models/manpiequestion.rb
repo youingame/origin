@@ -1,0 +1,2 @@
+class Manpiequestion < ApplicationRecord
+end

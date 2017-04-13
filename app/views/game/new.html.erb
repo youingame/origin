@@ -1,0 +1,54 @@
+<h1>Создаем новую игру</h1>
+<%= form_for :game, url: game_index_path do |f| %>
+<div class="form-group">
+<div class="row">
+    <div class="col-md-3">
+        <%= f.label "Имя парня:" %><br>
+    <%= f.text_field :man_name , class: "form-control"  %>
+    <p><%= f.label "Приемлемо" %></p>
+    <%= f.check_box :m_oral, as: :boolean, input_html: { checked: true }  %> <%= f.label "Оральные ласки" %><br>
+    <%= f.check_box :m_anal, as: :boolean, input_html: { checked: true }  %> <%= f.label "Анальные ласки" %><br>
+    <%= f.check_box :m_bdsm, as: :boolean, input_html: { checked: true }  %> <%= f.label "BDSM" %><br>
+    <%= f.check_box :m_fist, as: :boolean, input_html: { checked: true }  %> <%= f.label "Фистинг" %><br>
+    <%= f.check_box :m_pie, as: :boolean, input_html: { checked: true }  %> <%= f.label "Pissing" %><br>
+    <%= f.check_box :m_electro, as: :boolean, input_html: { checked: true }  %> <%= f.label "Electro" %><br>
+    </div>
+    <div class="col-md-6">
+    <%= f.label "Выберите тип игры" %><br>
+    <%= f.select :type_of, options_for_select([["Легкая", "1"], ["Средняя", "2"], ["Тяжелая", "3"]]), {class: "form-control"} %><br><br>
+    <p><%= f.label "Имеющиеся игрушки" %></p>
+    <%= f.check_box :g_vibrator, as: :boolean, input_html: { checked: true }  %> <%= f.label "Вибратор" %><br>
+    <%= f.check_box :g_anal_plug, as: :boolean, input_html: { checked: true }  %> <%= f.label "Анальная пробка" %><br>
+    <%= f.check_box :g_vibro_pule, as: :boolean, input_html: { checked: true }  %> <%= f.label "Вибропуля" %><br>
+    <%= f.check_box :g_massager, as: :boolean, input_html: { checked: true }  %> <%= f.label "Массажер" %><br>
+    <%= f.check_box :g_strapon, as: :boolean, input_html: { checked: true }  %> <%= f.label "Страпон" %><br>
+    <%= f.check_box :g_bondage, as: :boolean, input_html: { checked: true }  %> <%= f.label "Бондаж" %><br>
+    <%= f.check_box :g_pump, as: :boolean, input_html: { checked: true }  %> <%= f.label "Помпа" %><br>
+    <%= f.check_box :g_plet, as: :boolean, input_html: { checked: true }  %> <%= f.label "Плеть" %><br>
+    <%= f.check_box :g_klyap, as: :boolean, input_html: { checked: true }  %> <%= f.label "Кляп" %><br>
+    <%= f.check_box :g_electro, as: :boolean, input_html: { checked: true }  %> <%= f.label "Эллектро" %><br>
+    <%= f.check_box :g_vosk, as: :boolean, input_html: { checked: true }  %> <%= f.label "Воск" %><br>
+    <%= f.check_box :g_latex, as: :boolean, input_html: { checked: true }  %> <%= f.label "Латекс" %><br>
+    <%= f.check_box :g_rashiritel, as: :boolean, input_html: { checked: true }  %> <%= f.label "Расширитель" %><br>
+    </div>
+    <div class="col-md-3">
+        <%= f.label "Имя девушки:" %><br>
+    <%= f.text_field :woman_name , class: "form-control" %>
+    <p><%= f.label "Приемлемо" %></p>
+    <%= f.check_box :w_oral, as: :boolean, input_html: { checked: true }  %> <%= f.label "Оральные ласки" %><br>
+    <%= f.check_box :w_anal, as: :boolean, input_html: { checked: true }  %> <%= f.label "Анальные ласки" %><br>
+    <%= f.check_box :w_bdsm, as: :boolean, input_html: { checked: true }  %> <%= f.label "BDSM" %><br>
+    <%= f.check_box :w_fist, as: :boolean, input_html: { checked: true }  %> <%= f.label "Фистинг" %><br>
+    <%= f.check_box :w_pie, as: :boolean, input_html: { checked: true }  %> <%= f.label "Pissing" %><br>
+    <%= f.check_box :w_electro, as: :boolean, input_html: { checked: true }  %> <%= f.label "Electro" %><br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md">
+         <%= f.submit "Начать игру", class: "btn btn-success" %>
+    </div>
+
+</div>
+</div>
+<% end %>
+

@@ -1,0 +1,2 @@
+class Manbdsmquestion < ApplicationRecord
+end

@@ -1,0 +1,16 @@
+<h1>Listing games</h1>
+ 
+<table>
+  <tr>
+    <th>Man name</th>
+    <th>Woman name</th>
+  </tr>
+ 
+  <% @games.each do |game| %>
+    <tr>
+      <td><%= game.man_name %></td>
+      <td><%= game.woman_name %></td>
+      <td><%= link_to 'Show', game_index_path(game) %></td>
+    </tr>
+  <% end %>
+</table>

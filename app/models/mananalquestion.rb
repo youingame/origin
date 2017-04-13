@@ -1,0 +1,2 @@
+class Mananalquestion < ApplicationRecord
+end

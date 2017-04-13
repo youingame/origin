@@ -1,0 +1,2 @@
+class Manquestion < ApplicationRecord
+end

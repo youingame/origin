@@ -1,0 +1,29 @@
+<p>
+  <strong>Step:</strong>
+  <%= @game.step %>
+</p>
+
+<p>
+  <strong>Man points:</strong>
+  <%= @game.man_points %>
+</p>
+
+<p>
+  <strong>Woman points:</strong>
+  <%= @game.woman_points %>
+</p>
+
+<p>
+  <strong>Man name:</strong>
+  <%= @game.man_name %>
+</p>
+ 
+<p>
+  <strong>Woman name:</strong>
+  <%= @game.woman_name %>
+</p>
+
+<p>
+  <%= button_to 'OK', next_game_path(@game), method: :get %> <%= button_to 'NOT OK', next_bad_game_path(@game), method: :get %>
+  
+</p>

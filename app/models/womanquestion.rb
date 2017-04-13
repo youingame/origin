@@ -1,0 +1,2 @@
+class Womanquestion < ApplicationRecord
+end

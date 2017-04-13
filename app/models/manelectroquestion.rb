@@ -1,0 +1,2 @@
+class Manelectroquestion < ApplicationRecord
+end

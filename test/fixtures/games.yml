@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  step: 1
+  man_name: MyString
+  woman_name: MyString
+  man_points: 1
+  woman_points: 1
+
+two:
+  step: 1
+  man_name: MyString
+  woman_name: MyString
+  man_points: 1
+  woman_points: 1

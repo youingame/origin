@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-md-3">
+        <h2><%= @game.man_name %></h2>
+        <p><%= @game.man_points %></p>
+    </div>
+    <div class="col-md-6">
+    <% if @game.type_of == 1 %>
+        <h3>Действие выполняет: <%= @game.man_name %></h3>
+    <% else %>
+        <h3>Действие выполняет: <%= @game.woman_name %></h3>
+    <% end %>
+
+    <%= @question.question %>
+    <p><%= @question.points %></p>
+    </div>
+    <div class="col-md-3">
+        <h2><%= @game.woman_name %></h2>
+        <p><%= @game.woman_points %></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+         <%= button_to 'Выполнено', next_game_path(@game), method: :get, class: "btn btn-success" %>
+    </div>
+    <div class="col-md-6">
+        <%= button_to 'Невыполнено', next_bad_game_path(@game), method: :get, class: "btn btn-danger" %>
+    </div>
+</div>
+
+<p>
+  <strong>Step:</strong>
+  <%= @game.step %>
+</p>
